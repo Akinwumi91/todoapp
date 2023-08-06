@@ -11,3 +11,158 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Apphead{
+  width: 100%;
+  background-color: tomato;
+  height: 100%;
+
+}
+.Apphead .App{
+  width: 500px;
+  height: 100%;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+  
+  background-color: rgb(15, 14, 14);
+  color: white;
+  box-shadow: 2px 2px 5px black, 2px 2px 5px black;
+}
+.App::-webkit-scrollbar{
+  height: 0;
+}
+.myhead{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 5px black, 2px 2px 5px black;
+  border-bottom: 1px solid rgb(2, 2, 2);
+}
+
+header h1{
+  margin-left: 20px;
+  font-weight: bold;
+}
+header h3{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: blue;
+width: 80%;
+margin: auto;
+color: white;
+font-size: 25px;
+border-radius: 7px;
+height: 40px;
+margin-top: 30px;
+}
+.mydate{
+  margin-left: 30px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+form{
+  margin-top: 20px;
+}
+form label{
+  margin-left: 10px;
+  font-size: 20px;
+}
+form input[type="text"]{
+  width: 80%;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid grey;
+  font-family: sans-serif;
+  color: white;
+  background-color: rgb(15, 14, 14);  ;
+}
+.btnsubmit{
+  margin-left: 3px;
+  background-color: blue;
+  border: none;
+  width: 30px;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+
+}
+.btnsubmit:hover{
+  background-color: tomato;
+}
+
+main{
+  width: 90%;
+  margin: auto;  
+
+}
+main ul{
+  list-style: none;
+  padding: 2px;
+
+}
+
+main ul li{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2px;
+  margin: 16px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black, 2px 2px 5px black;
+
+}
+main ul li:hover{
+  transform: translateX(20px);
+  transition: 1s ease;
+  cursor: pointer;
+}
+main ul li input[type="checkbox"]{
+  margin-left: 10px;
+  width: 15px;
+
+}
+main ul li label{
+  font-size: 20px;
+
+}
+main ul li span{
+color: blue;
+cursor: pointer;
+margin-right: 10px;
+}
+main ul li span:hover{
+color: red;
+}
+
+.foot{
+  position: fixed;
+  z-index: 1;
+  bottom:0 ;
+  background-color: blue;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+}
